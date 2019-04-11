@@ -21,4 +21,10 @@ def seed_pokemon
   end
 end
 
+def seed_teams
+  50.times do Team.create!(trainer_id: (1 + Random.rand(9)), pokemon_id: (1 + Random.rand(9)), nickname: Faker::GreekPhilosophers.name )
+  puts "seeded Team!"
+  end
+end
 seed_pokemon
+seed_teams

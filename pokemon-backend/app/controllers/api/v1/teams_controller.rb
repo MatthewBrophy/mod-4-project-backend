@@ -1,4 +1,4 @@
-class TeamsController < ApplicationController
+class Api::V1::TeamsController < ApplicationController
 
   def find
     @team = Team.where(trainer_id: team_params)

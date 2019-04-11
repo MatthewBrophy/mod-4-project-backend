@@ -1,6 +1,18 @@
 Rails.application.routes.draw do
-  resources :teams
-  resources :trainers
-  resources :pokemons
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+    namespace :v1 do
+      resources :teams
+    end
+  end
+  namespace :api do
+    namespace :v1 do
+      resources :trainers
+    end
+  end
+  namespace :api do
+    namespace :v1 do
+      resources :pokemons
+    end
+  end
+
 end
