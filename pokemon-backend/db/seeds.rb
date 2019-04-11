@@ -1,7 +1,24 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+require 'json'
+
+require 'rest-client'
+
+10.times do (Trainer.create!(name: Faker::FunnyName.unique.name, hometown: Faker::Games::Pokemon.location, age: (16 + Random.rand(70)), image: "https://randomuser.me/api/portraits/med/men/#{1 + Random.rand(60)}.jpg", enemy: "Kevin")
+  puts "Seeded Trainer!"
+  )
+end
+
+
+
+def seed_pokemon
+  i=1
+  while i < 151 do
+  res = res = RestClient.get("https://pokeapi.co/api/v2/pokemon/#{i}")
+  r = JSON.parse(res)
+  newPokemon = Pokemon.create!(name: r['name'], front_img: r['sprites']['front_default'], back_img: r['sprites']['back_default'], weight: r['weight'], hp: r['stats'][5]['base_stat'])
+  puts newPokemon
+  i += 1
+  end
+end
+
+seed_pokemon
