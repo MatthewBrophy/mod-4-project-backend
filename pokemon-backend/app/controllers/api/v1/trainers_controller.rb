@@ -14,12 +14,11 @@ class Api::V1::TrainersController < ApplicationController
   end
 
   def create
+    puts trainer_params
     @trainer = Trainer.create(trainer_params)
-    # if @trainer.valid?
-    #
-    # else
-    #   #error
-    # end
+    if @trainer.valid?
+      render json: @trainer
+    end
   end
 
   def edit
@@ -41,7 +40,7 @@ class Api::V1::TrainersController < ApplicationController
   private
 
   def trainer_params
-    params.require(:trainers).permit(:name, :hometown, :image, :age, :enemy)
+    params.permit(:name, :hometown, :image, :age, :enemy)
   end
 end
 
