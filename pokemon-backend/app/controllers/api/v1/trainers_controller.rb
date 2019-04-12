@@ -37,6 +37,11 @@ class Api::V1::TrainersController < ApplicationController
     # end
   end
 
+  def find
+    @trainer = Trainer.find_by(name: params[:name])
+    render json: @trainer
+  end
+
   private
 
   def trainer_params
