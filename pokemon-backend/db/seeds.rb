@@ -12,7 +12,7 @@ end
 
 def seed_pokemon
   i=1
-  while i < 151 do
+  while i <= 151 do
   res = res = RestClient.get("https://pokeapi.co/api/v2/pokemon/#{i}")
   r = JSON.parse(res)
   newPokemon = Pokemon.create!(name: r['name'], front_img: r['sprites']['front_default'], back_img: r['sprites']['back_default'], weight: r['weight'], hp: r['stats'][5]['base_stat'])
