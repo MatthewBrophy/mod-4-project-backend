@@ -9105,3 +9105,285 @@ Migrating to CreateTeams (20190411162153)
   ↳ db/seeds.rb:25
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:25
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:01:55 -0700
+  [1m[35m (111.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brophy/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.2ms)
+Completed 200 OK in 130ms (Views: 101.6ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:04:11 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (24.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (290.06ms)
+Completed 200 OK in 381ms (Views: 343.3ms | ActiveRecord: 24.9ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:04:31 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (136.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (67.63ms)
+Completed 200 OK in 222ms (Views: 84.7ms | ActiveRecord: 136.5ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:05:12 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (3.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (219.74ms)
+Completed 200 OK in 241ms (Views: 236.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:05:25 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.98ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:20:17 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (5.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (161.91ms)
+Completed 200 OK in 208ms (Views: 197.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:20:48 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.78ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:22:23 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (3.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (35.88ms)
+Completed 200 OK in 63ms (Views: 58.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:25:39 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (3.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.03ms)
+Completed 200 OK in 60ms (Views: 52.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:28:11 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (18.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (59.88ms)
+Completed 200 OK in 137ms (Views: 112.5ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:28:29 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (2.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.7ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:28:35 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (165.08ms)
+Completed 200 OK in 179ms (Views: 176.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:28:52 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.33ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:29:04 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.53ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:29:15 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.56ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:32:32 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (2.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (108.66ms)
+Completed 200 OK in 151ms (Views: 142.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:32:45 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (62.37ms)
+Completed 200 OK in 80ms (Views: 77.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:32:54 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (244.06ms)
+Completed 200 OK in 262ms (Views: 259.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:32:57 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.75ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:33:19 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.73ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:33:32 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (53.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (41.78ms)
+Completed 200 OK in 155ms (Views: 87.9ms | ActiveRecord: 53.1ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:33:42 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (47.66ms)
+Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:33:49 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.91ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:34:29 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (7.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (222.96ms)
+Completed 200 OK in 248ms (Views: 239.4ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:34:33 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.41ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:34:37 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.67ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:34:54 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (41.37ms)
+Completed 200 OK in 56ms (Views: 52.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:35:11 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (62.64ms)
+Completed 200 OK in 81ms (Views: 79.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:37:23 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (5.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (227.35ms)
+Completed 200 OK in 250ms (Views: 243.8ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:38:02 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.14ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:38:18 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (52.05ms)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:38:22 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (51.75ms)
+Completed 200 OK in 66ms (Views: 63.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:38:36 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.74ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:41:23 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (1.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.68ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/pokemons" for ::1 at 2019-04-14 10:43:02 -0700
+Processing by Api::V1::PokemonsController#index as */*
+  [1m[36mPokemon Load (2.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/v1/pokemons_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (39.87ms)
+Completed 200 OK in 301ms (Views: 288.4ms | ActiveRecord: 2.6ms)
+
+
