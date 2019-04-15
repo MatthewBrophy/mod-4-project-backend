@@ -39,7 +39,11 @@ class Api::V1::TrainersController < ApplicationController
 
   def find
     @trainer = Trainer.find_by(name: params[:name])
-    render json: @trainer
+    if @trainer.valid?
+      render json: @trainer
+    else
+
+    end
   end
 
   private

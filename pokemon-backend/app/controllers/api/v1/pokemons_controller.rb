@@ -6,12 +6,13 @@ class Api::V1::PokemonsController < ApplicationController
   end
 
   def show
-    @pokemon = Pokemon.find(pokemon_params)
+    @pokemon = Pokemon.find(params[:id])
+    render json: @pokemon
   end
 
   private
 
   def pokemon_params
-    params.require(:pokemons).permit(:name, :front_img, :back_img, :weight, :hp)
+    params.require(:pokemon).permit(:name, :id, :front_img, :back_img, :weight, :hp)
   end
 end
