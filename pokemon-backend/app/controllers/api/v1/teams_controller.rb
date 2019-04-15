@@ -11,7 +11,7 @@ class Api::V1::TeamsController < ApplicationController
   end
 
   def find
-    @team = Team.where(trainer_id: team_params)
+    @team = Team.where(trainer_id: params[:trainer_id])
     render json: @team
   end
 
