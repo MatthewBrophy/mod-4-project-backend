@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :pokemons
       resources :trainers
       get 'trainers/name/:name', to: 'trainers#find'
+      get 'teams/find/:trainer_id', to: 'teams#find'
     end
   end
 end
