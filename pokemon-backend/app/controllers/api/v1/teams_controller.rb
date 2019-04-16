@@ -18,6 +18,6 @@ class Api::V1::TeamsController < ApplicationController
   private
 
   def team_params
-    params.permit(:trainer_id, :pokemon_id)
+    params.permit(:trainer_id, :pokemon_id, :nickname)
   end
 end
