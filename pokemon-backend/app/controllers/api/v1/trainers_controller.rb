@@ -33,10 +33,11 @@ class Api::V1::TrainersController < ApplicationController
     if @trainer.valid?
       render json: @trainer
     end
-    # else
-    #   #error
-    #
-    # end
+  end
+
+  def destroy
+    @trainer = Trainer.find_by(id: params[:id])
+    @trainer.destroy
   end
 
   def find
