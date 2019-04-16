@@ -6,7 +6,8 @@ class Api::V1::TrainersController < ApplicationController
   end
 
   def show
-    @trainer = Trainer.find(trainer_params)
+    @trainer = Trainer.find(params[:id])
+    render json: @trainer
   end
 
   def new
@@ -27,10 +28,11 @@ class Api::V1::TrainersController < ApplicationController
   end
 
   def update
-    @trainer = Trainer.find_by(params[:id])
-    @trainer.update(trainer_params)
-    # if @trainer.valid?
-    #
+    @trainer = Trainer.find_by(id: params[:id])
+    @trainer.update(trainer_update_params)
+    if @trainer.valid?
+      render json: @trainer
+    end
     # else
     #   #error
     #
@@ -50,6 +52,10 @@ class Api::V1::TrainersController < ApplicationController
 
   def trainer_params
     params.permit(:name, :hometown, :image, :age, :enemy)
+  end
+
+  def trainer_update_params
+    params.permit(:hometown, :image, :age, :enemy)
   end
 end
 
