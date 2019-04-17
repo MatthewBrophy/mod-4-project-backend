@@ -52,11 +52,11 @@ class Api::V1::TrainersController < ApplicationController
   private
 
   def trainer_params
-    params.permit(:name, :hometown, :image, :age, :enemy)
+    params.permit(:name, :hometown, :image, :age, :rival)
   end
 
   def trainer_update_params
-    params.permit(:hometown, :image, :age, :enemy)
+    params.permit(:hometown, :image, :age, :rival)
   end
 end
 

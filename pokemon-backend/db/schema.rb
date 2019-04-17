@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2019_04_11_162153) do
     t.string "hometown"
     t.integer "age"
     t.string "image"
-    t.string "enemy"
+    t.string "rival"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

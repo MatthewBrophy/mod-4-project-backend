@@ -5,7 +5,7 @@ class CreateTrainers < ActiveRecord::Migration[5.2]
       t.string :hometown
       t.integer :age
       t.string :image
-      t.string :enemy
+      t.string :rival
 
       t.timestamps
     end
